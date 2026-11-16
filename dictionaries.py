@@ -5,11 +5,11 @@ me = {
   "year": 2026
 }
 
-#Add a lable
+#Add a value
 me["sport"] = "Soccer"
 me["projects"] = 5
 
-#Change a lable
+#Change a value
 me["year"] = 2027
 
 print(me["name"])
