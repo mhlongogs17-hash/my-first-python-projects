@@ -38,10 +38,13 @@
     <p>2. Study Math - Due: 23-12</p>
     <p>Steps: Make summary notes</p>
     <button onclick="addTask()">Add New Task</button>
-<p id="newTask"></p>
+    <p id="newTask"></p>
   </div>
 </div>
 
+
+  
+ 
 
 
 
@@ -49,7 +52,9 @@
   function addTask() {
   let title = prompt("What is your task?");
   let due = prompt("When is it due?");
-  document.getElementById("newTask").innerHTML += "Added: " + title + " - Due: " + due + "<br>";
+  let step = prompt("What is the first small step for this task?");
+  document.getElementById("newTask").innerHTML += "Task: " + title + " - Due: " + due + "<br>Step 1: " + step + "<br><br>";
+}
 }
 </script>
 
