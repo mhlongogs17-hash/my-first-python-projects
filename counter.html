@@ -10,6 +10,10 @@ function addOne() {
   if (clicks > 5) {
     document.getElementById("count").style.color = "green";
   }
-
+ 
+  function resetCounter() {
+  clicks = 0
+  document.getElementById("count").innerHTML = clicks;
+  document.getElementById("count").style.color = "black";
 }
 </script>
