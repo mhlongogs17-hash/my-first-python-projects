@@ -1,19 +1,22 @@
 <h1>My Counter</h1>
 <p>Clicks: <span id="count" style="color: black;">0</span></p>
 <button onclick="addOne()">Click Me +1</button>
+<button onclick="resetCounter()">Reset</button>
 
 <script>
 let clicks = 0;
+
 function addOne() {
   clicks = clicks + 1;
   document.getElementById("count").innerHTML = clicks;
   if (clicks > 5) {
     document.getElementById("count").style.color = "green";
   }
- 
-  function resetCounter() {
-  clicks = 0
+}  
+
+function resetCounter() {
+  clicks = 0;
   document.getElementById("count").innerHTML = clicks;
   document.getElementById("count").style.color = "black";
-}
+}  
 </script>
